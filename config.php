@@ -6,13 +6,13 @@ use Firebase\JWT\JWT;
 
 $site = $sqlConnect->query("SELECT * FROM `table_site` LIMIT 1 ")->fetch_assoc();
 
-$site_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != "off") ? "https" : "http") . "://".$_SERVER['HTTP_HOST'] . '/';
+$site_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != "off") ? "https" : "http") . "://".$_SERVER['HTTP_HOST'] . '/'.'momotool/';
 
 $site_link = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != "off") ? "https" : "http") . "://".$_SERVER['HTTP_HOST'];
 
 $site_domain = parse_url($site_url)['host'];
 
-$site_public = $site_url. '/momotool/public';
+$site_public = $site_url. 'public';
 
 $site_modun  = $site_url. 'modun';
 
