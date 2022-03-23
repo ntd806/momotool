@@ -31,6 +31,7 @@ if($_POST['type'] == 'register') {
         die();
     }
     if(empty($_POST['otp'])){
+        var_dump($momo);
         $result = $momo->LoadData($_POST['phone'])->CheckBeUser();
         if(!empty($result['NAME'])){
             echo JsonStringFy(array(
