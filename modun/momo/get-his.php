@@ -1,4 +1,5 @@
 <?php
+var_dump($_GET['phone']);
 include_once '../../config.php';
 if(empty($username)){
     echo JsonStringFyError('Vui lòng đăng nhập lại để tiếp tục');

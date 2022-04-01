@@ -37,9 +37,10 @@ require_once '../site/head.php';
                                     <div class="form-group">
                                         <label>Nhập List Số Điện Thoại:</label>
                                         <textarea name="number" class="form-control" id="number" cols="5" rows="10" placeholder=
-"Example: 
-0987654321
-0123456789"></textarea>
+                                        "Example: 
+                                        0987654321
+                                        0123456789">
+                                       </textarea>
                                     </div>
                                     <div class="form-group text-center">
                                         <button class="btn btn-primary" id="submit-get-name" type="submit">Bắt Đầu</button>
